@@ -2067,6 +2067,16 @@ button:focus {
 .mt-20 {
   margin-top: 20px;
 }
+.mt-10 {
+  margin-top: 10px;
+}
+.mb-10 {
+  margin-bottom: 10px;
+}
+.my-10 {
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
 .content-lg {
   font-size: 18px;
   line-height: 2;
