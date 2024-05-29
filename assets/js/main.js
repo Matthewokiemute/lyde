@@ -142,8 +142,8 @@
       }
     });
     /* ===============================
-    	***** Fixed Header on Scroll *****
-    	================================*/
+      ***** Fixed Header on Scroll *****
+      ================================*/
     $(window).on("scroll", function () {
       let navbar = $(".sticky-header-active");
       var scroll = $(window).scrollTop();
@@ -400,7 +400,7 @@
       var scene = $('.parallax-cta').get(0);
       var parallaxInstance = new Parallax(scene);
     }
-    
+
     $('.tilt-effect').tilt({
       maxTilt: 20,
       perspective: 1000, // Transform perspective, the lower the more extreme the tilt gets.
@@ -433,11 +433,15 @@
       gallery: {
         enabled: true,
         navigateByImgClick: true,
-        preload: [0,1]
+        preload: [0, 1]
       }
     });
-    
+
 
   });
-  $(window).on('load',function(){if($(".page-loader").length){$(".page-loader").fadeOut("slow");}});
+  $(document).ready(function() {
+    // Select the element with the desired ID
+    $("#currentYear").text(new Date().getFullYear());
+  });
+  $(window).on('load', function () { if ($(".page-loader").length) { $(".page-loader").fadeOut("slow"); } });
 })(jQuery);
