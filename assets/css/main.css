@@ -174,7 +174,7 @@ textarea {
   }
 }
 /* 2. Header styles  */
-}
+
 #site-overlay {
   position: fixed;
   width: 100%;
@@ -1132,7 +1132,7 @@ ul.gva-my-account-menu>li>a:focus:after {
   padding: 175px 0;
 }
 .slider-intro {
-  font-size: 20px;
+  font-size: 14px;
   line-height: 36px;
   color: #fee026;
   font-weight: 700;
@@ -1162,12 +1162,12 @@ ul.gva-my-account-menu>li>a:focus:after {
   transition-delay: 500ms;
 }
 .slider-heading {
-  font-size: 90px;
+  font-size: 70px;
   font-weight: 800;
   color: #fff;
   letter-spacing: -0.32px;
   line-height: 1.1;
-  margin: 15px auto 35px auto;
+  margin: 10px auto 20px auto;
   position: relative;
   display: block;
   opacity: 0;
@@ -1181,6 +1181,36 @@ ul.gva-my-account-menu>li>a:focus:after {
   -ms-transform: translateY(50px);
   -o-transform: translateY(50px);
   transform: translateY(50px);
+}
+.slider-desc {
+  font-size: 16px;
+  line-height: 22px;
+  color: #ececec;
+  font-weight: 500;
+  letter-spacing: 3.2px;
+  margin: 10px auto 35px auto;
+  position: relative;
+  display: block;
+  opacity: 0;
+  -webkit-transition: all 1000ms ease;
+  -moz-transition: all 1000ms ease;
+  -ms-transition: all 1000ms ease;
+  -o-transition: all 1000ms ease;
+  transition: all 1000ms ease;
+  -webkit-transform: translateY(50px);
+  -moz-transform: translateY(50px);
+  -ms-transform: translateY(50px);
+  -o-transform: translateY(50px);
+  transform: translateY(50px);
+}
+.clenoz-slider .active .slider-desc {
+  opacity: 1;
+  -webkit-transform: translateY(0);
+  -moz-transform: translateY(0);
+  -ms-transform: translateY(0);
+  -o-transform: translateY(0);
+  transform: translateY(0);
+  transition-delay: 1200ms;
 }
 .clenoz-slider .active .slider-heading {
   opacity: 1;
@@ -1240,13 +1270,13 @@ ul.gva-my-account-menu>li>a:focus:after {
 .clenoz-slider .owl-next,
 .clenoz-slider .owl-prev {
   background: transparent !important;
-  width: 70px !important;
-  height: 70px !important;
+  width: 50px !important;
+  height: 50px !important;
   border: 1px solid #fff !important;
   color: #fff !important;
-  -webkit-border-radius: 70px !important;
-  -moz-border-radius: 70px !important;
-  border-radius: 70px !important;
+  -webkit-border-radius: 50px !important;
+  -moz-border-radius: 50px !important;
+  border-radius: 50px !important;
   font-size: 20px !important;
   position: relative;
 }
@@ -1274,7 +1304,7 @@ ul.gva-my-account-menu>li>a:focus:after {
   border: 1px solid #2c85ff !important;
 }
 .clenoz-slider .owl-prev {
-  margin-top: 30px;
+  margin-top: 10px;
 }
 .clenoz-slider .owl-prev {
   position: absolute;
@@ -1588,7 +1618,7 @@ button:focus {
   font-size: 22px;
   font-weight: 700;
   color: #19203f;
-  margin: 30px auto;
+  margin: 30px auto 15px auto;
   display: block;
   position: relative;
 }
@@ -1612,6 +1642,10 @@ button:focus {
   color: #717483;
   font-weight: 500;
   line-height: 1.7;
+}
+.service-block-button {
+  margin-top: 15px;
+  /* margin-bottom: 15px; */
 }
 .service-thumbnail {
   position: relative;
@@ -2576,6 +2610,7 @@ button:focus {
   .header-contact-two {
     display: none;
   }
+ 
 }
 /* hero-content 2 */
 .hero-content-two {
@@ -3865,6 +3900,9 @@ button:focus {
   .contact-form .form-submit-btn {
     padding: 20px 30px;
   }
+  .service-block-button {
+    display: none;
+  }
 }
 /* Medium devices (tablets, 768px and up)  */
 @media (min-width: 768px) and (max-width: 991.98px) {
@@ -3896,6 +3934,7 @@ button:focus {
     left: 30px;
     padding: 40px;
   }
+  
 }
 /* Medium devices (tablets, 768px and up)  */
 @media (min-width: 576px) and (max-width: 767.98px) {
@@ -3914,6 +3953,7 @@ button:focus {
     position: relative;
     margin-bottom: 0px;
   }
+  
 }
 /* Extra small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
