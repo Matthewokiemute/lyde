@@ -1,14 +1,17 @@
-'use strict'
+'use strict';
 
 const form = document.getElementById('form');
 const result = document.getElementById('result');
+const modal = document.getElementById('modal');
+const closeButton = document.querySelector('.close-button');
 
 form.addEventListener('submit', function (e) {
     e.preventDefault();
     const formData = new FormData(form);
     const object = Object.fromEntries(formData);
     const json = JSON.stringify(object);
-    result.innerHTML = "Please wait..."
+    result.innerHTML = "Please wait...";
+    modal.style.display = "block";
 
     fetch('https://api.web3forms.com/submit', {
         method: 'POST',
@@ -34,7 +37,17 @@ form.addEventListener('submit', function (e) {
         .then(function () {
             form.reset();
             setTimeout(() => {
-                result.style.display = "none";
+                modal.style.display = "none";
             }, 3000);
         });
+});
+
+closeButton.addEventListener('click', () => {
+    modal.style.display = "none";
+});
+
+window.addEventListener('click', (event) => {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
 });
