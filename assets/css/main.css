@@ -23,8 +23,10 @@ $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 17 - contact page
 *****************
 Used fonts-
-font-family: 'Poppins', sans-serif;
+font-family: 'Nunito', sans-serif;
 */
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
 /* 1. Basic styles  */
 html {
   color: #717483;
@@ -32,7 +34,7 @@ html {
   line-height: 1.4;
 }
 body {
-  font-family: "Inter", sans-serif;
+  font-family: 'Nunito', sans-serif;
   font-size: 14px;
   line-height: 1.5;
   color: #717483;
