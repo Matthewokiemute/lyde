@@ -44,18 +44,20 @@
         <div class="container">
           <div class="row align-items-center">
             <div class="col-md-4 col-lg-4">
-              <span class="header-top-content"
-                >Call us to Get Free Estimate: <span>666 888 0000</span></span
+              <span class="header-top-content link"
+                >Call us to Get Free Estimate:
+                <a href="tel:+666 888 0000"><span>666 888 0000</span></a></span
               >
             </div>
             <div class="col-md-8 col-lg-8">
               <div class="d-sm-flex justify-content-sm-end">
-                <div
-                  class="header-top-block top-email-block d-flex align-items-center"
+                <a
+                  href="mailto:needhelp@clenoz.com"
+                  class="header-top-block top-email-block d-flex align-items-center link"
                 >
                   <i class="fal fa-envelope header-top-icon"></i>
                   needhelp@clenoz.com
-                </div>
+                </a>
                 <div
                   class="header-top-block top-location-block ml-4 d-flex align-items-center"
                 >
@@ -244,14 +246,26 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-6 offset-lg-1 mt-md-30 mt-sm-30 mt-xs-30">
+          <div
+            id="contact-form-page"
+            class="col-lg-6 offset-lg-1 mt-md-30 mt-sm-30 mt-xs-30"
+          >
             <div class="contact-form">
               <form
-                method="post"
-                action="https://clenoz.microtheme.co/html/contact.php"
-                name="contactform"
+                action="https://api.web3forms.com/submit"
+                method="POST"
                 id="contactform"
               >
+                <input
+                  type="hidden"
+                  name="access_key"
+                  value="14ec3192-f7bf-40ce-9535-bbc21accae1e"
+                />
+                <input
+                  type="hidden"
+                  name="subject"
+                  value="New Service Request"
+                />
                 <div class="row">
                   <div class="col-sm-6 mb-30">
                     <input
@@ -259,8 +273,8 @@
                       type="text"
                       id="name"
                       size="30"
-                      value=""
                       placeholder="Full Name"
+                      required
                     />
                   </div>
                   <div class="col-sm-6 mb-30">
@@ -269,8 +283,8 @@
                       type="text"
                       id="email"
                       size="30"
-                      value=""
                       placeholder="Email"
+                      required
                     />
                   </div>
                 </div>
@@ -281,13 +295,18 @@
                       type="text"
                       id="phone"
                       size="30"
-                      value=""
                       placeholder="Phone"
+                      required
                     />
                   </div>
                   <div class="col-sm-6 mb-30">
                     <div class="select-service">
-                      <select name="subject" id="subject" class="nice-select">
+                      <select
+                        name="subject"
+                        id="subject"
+                        class="nice-select"
+                        required
+                      >
                         <option value="">Select Services</option>
                         <option value="Home cleaning">Home cleaning</option>
                         <option value="Airbnb cleaning">Airbnb cleaning</option>
@@ -312,20 +331,11 @@
                       rows="5"
                       id="comments"
                       placeholder="Message"
+                      required
                     ></textarea>
                   </div>
                 </div>
                 <div class="row">
-                  <!-- <div class="col-sm-6">
-                    <input
-                      name="verify"
-                      type="text"
-                      id="verify"
-                      size="4"
-                      value=""
-                      placeholder="Total of 3+1 = ?"
-                    />
-                  </div> -->
                   <div class="col-sm-6 mt-xs-30">
                     <button type="submit" class="form-submit-btn primary-btn">
                       Send a Message
@@ -481,17 +491,23 @@
             <h4 class="footer-widget-title">Let’s Book</h4>
             <div class="contact-block mb-20">
               <div class="contact-list">
-                <i class="fas fa-phone-volume"></i> 666 888 000
+                <a href="tel:+666 888 000">
+                  <i class="fas fa-phone-volume"></i> 666 888 000
+                </a>
               </div>
               <div class="contact-list">
-                <i class="fas fa-envelope"></i> needhelp@clenoz.com
+                <a href="mailto:needhelp@clenoz.com">
+                  <i class="fas fa-envelope"></i> needhelp@clenoz.com
+                </a>
               </div>
               <div class="contact-list">
                 <i class="fas fa-map-marker-alt"></i> 660 Broklyn Golden Street
                 USA
               </div>
             </div>
-            <a href="#" class="btn primary-btn footer-quote-btn"
+            <a
+              href="#contact-form-page"
+              class="btn primary-btn footer-quote-btn"
               >Get a free Quote</a
             >
           </div>

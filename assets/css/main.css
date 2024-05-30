@@ -2247,6 +2247,9 @@ button:focus {
 .footer-logo {
   display: block;
 }
+.contact-list a {
+  text-decoration: none;
+}
 .contact-list i {
   color: #2c85ff;
   margin-right: 5px;
@@ -3619,4 +3622,22 @@ button:focus {
 .page-loader {
   background-position: 50% 50%;
   background-repeat: no-repeat;
+}
+
+#result {
+  width: 160px;
+  height: 160px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 9999;
+  max-width: 100%;
+  overflow: hidden;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+}
+
+.link {
+  text-decoration: none;
+  color: inherit;
 }

@@ -1,3 +1,4 @@
+
 (function ($) {
   "use strict";
   $('.offcanvas-content ul.mobile-menu > li:has(ul)').addClass("has-sub");
@@ -445,3 +446,4 @@
   });
   $(window).on('load', function () { if ($(".page-loader").length) { $(".page-loader").fadeOut("slow"); } });
 })(jQuery);
+
