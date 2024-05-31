@@ -209,6 +209,9 @@ textarea {
   display: inline-block;
   cursor: pointer;
 }
+.menu-offcanvas {
+  font-size: 18px;
+}
 .header-absolute {
   position: absolute;
   width: 100%;
@@ -684,21 +687,21 @@ ul.gva-my-account-menu>li>a:focus:after {
 #mobile-header-expander .hamburger-menu {
   position: relative;
   display: block;
-  width: 40px;
-  height: 30px;
+  width: 30px;
+  height: 20px;
 }
 #mobile-header-expander .hamburger-menu .hamburger-menu-line.hamburger-menu-line-1 {
   top: 0;
-  width: 20px;
+  width: 10px;
 }
 #mobile-header-expander .hamburger-menu .hamburger-menu-line.hamburger-menu-line-2 {
   top: 0;
   right: 0;
   left: auto;
-  width: 10px;
+  width: 5px;
 }
 #mobile-header-expander .hamburger-menu .hamburger-menu-line.hamburger-menu-line-3 {
-  top: 14px;
+  top: 10px;
   width: 100%;
 }
 #mobile-header-expander .hamburger-menu .hamburger-menu-line.hamburger-menu-line-4 {
@@ -706,10 +709,10 @@ ul.gva-my-account-menu>li>a:focus:after {
   width: 100%;
 }
 #mobile-header-expander:hover .hamburger-menu .hamburger-menu-line.hamburger-menu-line-1 {
-  width: 10px;
+  width: 5px;
 }
 #mobile-header-expander:hover .hamburger-menu .hamburger-menu-line.hamburger-menu-line-2 {
-  width: 25px;
+  width: 20px;
 }
 #mobile-header-expander .hamburger-menu .hamburger-menu-line {
   position: absolute;
@@ -1098,6 +1101,11 @@ button:focus {
   display: inline-block;
   position: relative;
   margin-left: 60px;
+}
+
+.mobile-logo {
+  width: auto;
+  height: 35px;
 }
 /* about us  */
 .about-section {
@@ -3704,6 +3712,10 @@ button:focus {
 }
 
 .link {
+  text-decoration: none;
+  color: inherit;
+}
+.link:hover {
   text-decoration: none;
   color: inherit;
 }
