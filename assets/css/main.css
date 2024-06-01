@@ -25,7 +25,7 @@ $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 Used fonts-
 font-family: 'Nunito', sans-serif;
 */
-@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inclusive+Sans:ital@0;1&family=Radio+Canada+Big:ital,wght@0,400..700;1,400..700&display=swap');
 
 /* 1. Basic styles  */
 html {
@@ -34,7 +34,8 @@ html {
   line-height: 1.4;
 }
 body {
-  font-family: 'Nunito', sans-serif;
+  /* font-family: "Radio Canada Big", sans-serif; */
+  font-family: "Inclusive Sans", sans-serif;
   font-size: 14px;
   line-height: 1.5;
   color: #717483;
@@ -880,7 +881,7 @@ ul.gva-my-account-menu>li>a:focus:after {
   border-left: 1px solid #e4e8ee;
 }
 .top-email-block {
-  padding: 15px 50px;
+  padding: 5px 50px;
 }
 .top-location-block {
   padding: 5px 0px 5px 50px;
