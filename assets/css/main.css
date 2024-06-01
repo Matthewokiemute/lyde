@@ -22,10 +22,8 @@ $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 16 - page-hero
 17 - contact page
 *****************
-Used fonts-
-font-family: 'Nunito', sans-serif;
 */
-@import url('https://fonts.googleapis.com/css2?family=Inclusive+Sans:ital@0;1&family=Radio+Canada+Big:ital,wght@0,400..700;1,400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Onest:wght@100..900&display=swap');
 
 /* 1. Basic styles  */
 html {
@@ -34,8 +32,7 @@ html {
   line-height: 1.4;
 }
 body {
-  /* font-family: "Radio Canada Big", sans-serif; */
-  font-family: "Inclusive Sans", sans-serif;
+  font-family: "Onest", sans-serif;
   font-size: 14px;
   line-height: 1.5;
   color: #717483;
