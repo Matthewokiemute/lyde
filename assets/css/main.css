@@ -863,6 +863,10 @@ ul.gva-my-account-menu>li>a:focus:after {
   position: relative;
   padding-right: 40px;
 }
+/* .header-log {
+  width: auto;
+  height: 20px;
+} */
 .slider-inner {
   background-size: cover;
   padding: 175px 0;
@@ -2516,9 +2520,9 @@ button:focus {
   width: 75px;
   height: 75px;
   border-radius: 75px;
-  color: #19203f;
+  color: #1C3265;
   font-size: 35px;
-  background: #46AF5B;
+  background: #fff;
   line-height: 75px;
   text-align: center;
 }
