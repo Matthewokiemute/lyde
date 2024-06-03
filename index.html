@@ -209,7 +209,7 @@
             <div class="row">
               <div class="col-sm-12 col-lg-7">
                 <span class="slider-intro"
-                  >Airbnb & Mobile Laundry Cleaning</span
+                  >Airbnb & Mobile Laundry Services</span
                 >
                 <h2 class="slider-heading">Reliable Commercial Cleaning</h2>
                 <p class="slider-desc">
@@ -568,7 +568,8 @@
           <div class="col-xl-4 col-lg-5 offset-xl-2 mt-xs-30">
             <div class="estimate-form-block">
               <h3>Free Estimate</h3>
-              <form action="https://api.web3forms.com/submit" method="POST">
+              <form  class="form"  id="contact-form"
+              onsubmit="handleFormSubmit(event)">
                 <input
                   type="hidden"
                   name="access_key"
@@ -579,6 +580,12 @@
                   name="subject"
                   value="New Estimate Request"
                 />
+                  <div class="mb-3">
+                    <div id="success-message" class="d-none">
+                    </div>
+                    <div id="error-message" class="d-none"></div>
+
+                  </div>
                 <div class="input-field">
                   <input
                     type="text"
@@ -605,8 +612,8 @@
                 </div>
                 <div class="input-field">
                   <select
-                    name="choosen Service"
-                    id="choseservice"
+                    name="Service Type"
+                    id="service"
                     class="nice-select"
                     required
                   >
@@ -622,8 +629,8 @@
                     <option value="Beginning/End-of-tenancy Cleaning">
                       Beginning/End-of-tenancy Cleaning
                     </option>
-                    <option value="Mobile dry Cleaning">
-                      Mobile Laundry Cleaning
+                    <option value="Mobile Laundry Service">
+                      Mobile Laundry Service
                     </option>
                   </select>
                 </div>
