@@ -1345,7 +1345,7 @@ button:focus {
   border-top-right-radius: 15px;
 }
 .service-block-content {
-  padding: 45px 30px;
+  padding: 35px 30px;
   background: #fff;
   border-right: 1px solid #e4e8ee;
   border-left: 1px solid #e4e8ee;
@@ -2406,6 +2406,11 @@ button:focus {
   margin-bottom: -245px;
 }
 /* service-block-two  */
+.service-block {
+  min-height: 550px;
+  border-radius: 40px;
+}
+
 .services-section-two {
   background-size: auto;
   background-repeat: no-repeat;
@@ -3771,4 +3776,8 @@ button:focus {
 
 .about-4 {
   border-radius: 30px;
+}
+
+.image-radius {
+  border-radius: 35px;
 }
