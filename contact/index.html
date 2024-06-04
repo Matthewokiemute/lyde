@@ -2,24 +2,27 @@
 <html class="no-js" lang="">
   <head>
     <meta charset="utf-8" />
-    <title>Contact Us - Professional Cleaning Service</title>
-    <meta
-      name="description"
-      content="We provide quality and professional cleaning services"
-    />
+    <title>Contact Us - Lyde Ltd. | Book Your Cleaning Service Today</title>
+    <meta name="description"
+        content="Get in touch with Lyde Ltd. to book your cleaning service or to learn more about our comprehensive cleaning solutions. Our team is ready to assist you with any inquiries. Call us at +44 7450 267084 or email info@lydeltd.co.uk. Visit us at 124 City Road, London EC1V2NX. We look forward to making your space sparkle!">
+    <meta name="keywords"
+        content="Lyde Ltd, contact Lyde Ltd, book cleaning service, cleaning service inquiries, cleaning company contact, cleaning services UK, professional cleaning solutions, London cleaning company, free cleaning estimate, contact information, UK cleaning services">
+    <link rel="canonical" href="https://lydeltd.co.uk/">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="https://lydeltd.co.uk/">
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="Contact Us - Lyde Ltd. | Book Your Cleaning Service Today">
+    <meta property="og:description"
+        content="Get in touch with Lyde Ltd. to book your cleaning service or to learn more about our comprehensive cleaning solutions. Our team is ready to assist you with any inquiries. Call us at +44 7450 267084 or email info@lydeltd.co.uk. Visit us at 124 City Road, London EC1V2NX. We look forward to making your space sparkle!">
+    <meta property="og:image" content="../assets/img/seo-bg.webp">
+    <meta property="og:url" content="https://lydeltd.co.uk/">
+    <!-- Twitter Card Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Contact Us - Lyde Ltd. | Book Your Cleaning Service Today">
+    <meta name="twitter:description"
+        content="Get in touch with Lyde Ltd. to book your cleaning service or to learn more about our comprehensive cleaning solutions. Our team is ready to assist you with any inquiries. Call us at +44 7450 267084 or email info@lydeltd.co.uk. Visit us at 124 City Road, London EC1V2NX. We look forward to making your space sparkle!">
+    <meta name="twitter:image" content="../assets/img/seo-bg.webp">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta
-      property="og:image"
-      content="https://lyde.vercel.app/assets/img/logo.webp"
-    />
-    <meta
-      property="og:url"
-      content="https://lyde.vercel.app/assets/img/logo.webp"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
-      rel="stylesheet"
-    />
     <link
       rel="shortcut icon"
       href="../assets/img/logo.webp"
@@ -71,22 +74,6 @@
       <!-- start desktop menu  -->
       <div class="header-block d-none d-lg-block sticky-header-active">
         <div class="container">
-          <div class="full-bar-search-wrap">
-            <div class="search-form-wrapper">
-              <form method="get" class="search-form" action="#">
-                <div class="search-form-group">
-                  <input
-                    name="s"
-                    type="text"
-                    class="form-control"
-                    value=""
-                    placeholder="Search here..."
-                  />
-                </div>
-              </form>
-              <a href="#" class="close full-bar-search-toggle"></a>
-            </div>
-          </div>
           <div class="row align-items-center">
             <div class="col-md-3 col-lg-2">
               <div class="header-logo">
@@ -252,7 +239,8 @@
             class="col-lg-6 offset-lg-1 mt-md-30 mt-sm-30 mt-xs-30"
           >
             <div class="contact-form">
-              <form action="https://api.web3forms.com/submit" method="POST">
+              <form  class="form"  id="contact-form"
+              onsubmit="handleFormSubmit(event)">
                 <input
                   type="hidden"
                   name="access_key"
@@ -264,6 +252,11 @@
                   value="New Service Request"
                 />
                 <div class="row">
+                  <div class="col-lg-12 mb-3">
+                    <div id="success-message" class="d-none">
+                    </div>
+                    <div id="error-message" class="d-none"></div>
+                </div>
                   <div class="col-sm-6 mb-30">
                     <input
                       name="name"
@@ -299,12 +292,13 @@
                   <div class="col-sm-6 mb-30">
                     <div class="select-service">
                       <select
-                        name="subject"
-                        id="subject"
+                        name="Service Type"
+                        id="service"
                         class="nice-select"
                         required
                       >
                         <option value="">Select Services</option>
+                        <option value="General inquiry">General inquiry</option>
                         <option value="Home cleaning">Home cleaning</option>
                         <option value="Airbnb cleaning">Airbnb Cleaning</option>
                         <option value="Commercial Cleaning">
@@ -412,24 +406,8 @@
       <div class="container-full">
         <div class="row">
           <div class="col-md-12">
-            <div class="map-contact-details">
-              <div class="footer-widget map-widget">
-                <!-- Social Outer -->
-                <div class="map-outer">
-                  <div
-                    class="map-canvas"
-                    data-zoom="18"
-                    data-lat="-37.817085"
-                    data-lng="144.955631"
-                    data-type="roadmap"
-                    data-hue="#ffc400"
-                    data-title="Envato"
-                    data-icon-path="../assets/img/marker.svg"
-                    data-content=""
-                  ></div>
-                </div>
-              </div>
-            </div>
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2482.2664228869075!2d-0.09075612318409768!3d51.52667307181762!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48761ca671bbca5f%3A0x137edcd9e2d92eb1!2s124%20City%20Rd%2C%20London%20EC1V%202NX%2C%20UK!5e0!3m2!1sen!2sng!4v1717440521407!5m2!1sen!2sng"  height="600" style="border:0; width: 100%;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
           </div>
         </div>
       </div>
@@ -561,5 +539,6 @@
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCo_pcAdFNbTDCAvMwAD19oRTuEmb9M50c"></script>
     <script src="../assets/js/vendor/map-script.js"></script>
     <script src="../assets/js/main.js"></script>
+    <script src="../assets/js/form.js"></script>
   </body>
 </html>
